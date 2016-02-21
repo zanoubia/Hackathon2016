@@ -12,7 +12,7 @@ Test.Preloader.prototype = {
 
 
 		this.load.image('transparent','assets/images/transparent.png')
-		this.load.image('confpanel','assets/images/.confpanel656x656.png')
+		this.load.image('confpanel','assets/images/confpanel656x656.png')
 		
 		//this.load.image('answerback', 'assets/images/answerback.png');
 		
