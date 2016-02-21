@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Test</title>
+	<style> 
+	    body { margin: 0; background: #333; }
+	    canvas {    margin: auto;   } 
+	</style>
+	<script src="src/phaser.min.js"></script>
+	<script src="src/Boot.js"></script>
+	<script src="src/Preloader.js"></script>
+	<script src="src/MainMenu.js"></script>
+    <script src="src/About.js"></script>
+	<script src="src/StoryHowto.js"></script>
+	<script src="src/levels/level0/Level0.js"></script>
+
+	<script type="text/javascript">var switchTo5x=true;</script>
+	
+	
+	
+
+</head>
+<body id="body">
+<script>
+(function() {
+	var game = new Phaser.Game(1280, 720, Phaser.CANVAS, 'game');
+	game.state.add('Boot', Test.Boot);
+	game.state.add('Preloader', Test.Preloader);
+	game.state.add('MainMenu', Test.MainMenu);
+	game.state.add('About', Test.About);
+	game.state.add('StoryHowto', Test.StoryHowto);
+	game.state.add('Level0', Test.Level0);
+	game.state.start('Boot');
+})();
+</script>
+	 
+</body>
+
+</html>
