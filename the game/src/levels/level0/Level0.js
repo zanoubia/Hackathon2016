@@ -51,7 +51,9 @@ Test.Level0.prototype = {
 		exitpanel = this.game.add.button(this.game.world.centerX * 1/2 + 600 ,0,"exit",this.closehelppanel);
 		helppanel.add(exitpanel);
 		helppanel.visible = false ;
-		
+
+
+		arrow = this.game.add.sprite(350 ,350,"arrow");
 
 
 	},
@@ -97,6 +99,7 @@ Test.Level0.prototype = {
 	isclicked : function(item, itemname){
 		item.inputEnabled = true;
 		item.events.onInputDown.add(this.setselectednode, {'itemname':itemname});
+		item.input.useHandCursor = true;
 	},	
 
 	setselectednode : function(){

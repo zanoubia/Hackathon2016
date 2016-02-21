@@ -24,6 +24,8 @@ Test.Preloader.prototype = {
 		this.load.image('rules','assets/images/rules.png');
 		this.load.image('about','assets/images/about.png');	
 		this.load.image('back','assets/images/back.png');	
+		this.load.image('arrow','assets/images/arrow.png')
+
 
 		this.load.image('jumpers','assets/images/jumpers.png');
 		this.load.image('nexthop','assets/images/nexthop.png')
