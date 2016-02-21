@@ -35,7 +35,14 @@ Test.Level0.prototype = {
         this.map.createFromObjects('Clicknode1', 81,'transparent',0, true, false, node1group);
         this.map.createFromObjects('Clicknode2', 81,'transparent',0, true, false, node2group);
 
-        
+        arrow = this.game.add.sprite(350 ,350,"arrow");
+        this.game.add.text(350, 330 ,"ping node-2"  , {
+                        font: "20px Arial",
+                        fill: "#9cd5f3",
+                        align: "left",
+                        wordWrapWidth : 300
+                        });
+
 		//this.game.state.start('Congrats');
 
 		confpanel = this.game.add.group();
@@ -53,7 +60,8 @@ Test.Level0.prototype = {
 		helppanel.visible = false ;
 
 
-		arrow = this.game.add.sprite(350 ,350,"arrow");
+		
+
 
 
 	},
