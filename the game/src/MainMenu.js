@@ -7,6 +7,7 @@ Test.MainMenu.prototype = {
     aboutbutton = this.game.add.button(100 + 215+200+10+200+10 ,this.game.world.centerY -90,"about",this.about);
 
     jumpers = this.game.add.sprite(100 + (1028-600)/2,0,"jumpers");
+    nexthop = this.game.add.sprite(100 + (1028-600)/2,400,"nexthop");
 
 
     this.game.input.maxPointers = 1; 
